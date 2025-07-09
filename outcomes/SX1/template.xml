@@ -2,7 +2,7 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <content>
         <p>
-            Consider the linear optimization problem encoded by the folloing tableau:
+            Consider the linear optimization problem encoded by the following tableau:
         </p>
         <p>
             <me>
@@ -26,7 +26,58 @@
     </content>
     <outtro>
         <p>
-            <m>a_{ {{pv1i}} {{pv1j}} }</m>, <m>a_{ {{pv2i}} {{pv2j}} }</m> and <m>a_{ {{pv3i}} {{pv3j}} }</m>.
+            The valid pivots are on entries <m>a_{ {{pv1i}} {{pv1j}} }</m>, <m>a_{ {{pv2i}} {{pv2j}} }</m> and <m>a_{ {{pv3i}} {{pv3j}} }</m>.
+        </p>
+        <p>
+            Pivoting on <m>a_{ {{pv1i}} {{pv1j}} }</m> produces:
+            <me>
+                \begin{array}{|ccccc|c|l}
+                {{p1x1}} &amp; {{p1x2}} &amp; {{p1x3}} &amp; {{p1x4}} &amp; {{p1x5}} &amp; -1\\
+                \hline
+                {{p1a11}} &amp; {{p1a12}} &amp; {{p1a13}} &amp; {{p1a14}} &amp; {{p1a15}} &amp; {{p1b1}} &amp; = -{{p1t1}}\\
+                {{p1a21}} &amp; {{p1a22}} &amp; {{p1a23}} &amp; {{p1a24}} &amp; {{p1a25}} &amp; {{p1b2}} &amp; = -{{p1t2}}\\
+                {{p1a31}} &amp; {{p1a32}} &amp; {{p1a33}} &amp; {{p1a34}} &amp; {{p1a35}} &amp; {{p1b3}} &amp; = -{{p1t3}}\\
+                {{p1a41}} &amp; {{p1a42}} &amp; {{p1a43}} &amp; {{p1a44}} &amp; {{p1a45}} &amp; {{p1b4}} &amp; = -{{p1t4}}\\
+                {{p1a51}} &amp; {{p1a52}} &amp; {{p1a53}} &amp; {{p1a54}} &amp; {{p1a55}} &amp; {{p1b5}} &amp; = -{{p1t5}}\\
+                \hline
+                {{p1c1}} &amp; {{p1c2}} &amp; {{p1c3}} &amp; {{p1c4}} &amp; {{p1c5}} &amp; {{p1d}}\\
+                \hline
+                \end{array}
+            </me>
+        </p>
+        <p>
+            Pivoting on <m>a_{ {{pv2i}} {{pv2j}} }</m> produces:
+            <me>
+                \begin{array}{|ccccc|c|l}
+                {{p2x1}} &amp; {{p2x2}} &amp; {{p2x3}} &amp; {{p2x4}} &amp; {{p2x5}} &amp; -1\\
+                \hline
+                {{p2a11}} &amp; {{p2a12}} &amp; {{p2a13}} &amp; {{p2a14}} &amp; {{p2a15}} &amp; {{p2b1}} &amp; = -{{p2t1}}\\
+                {{p2a21}} &amp; {{p2a22}} &amp; {{p2a23}} &amp; {{p2a24}} &amp; {{p2a25}} &amp; {{p2b2}} &amp; = -{{p2t2}}\\
+                {{p2a31}} &amp; {{p2a32}} &amp; {{p2a33}} &amp; {{p2a34}} &amp; {{p2a35}} &amp; {{p2b3}} &amp; = -{{p2t3}}\\
+                {{p2a41}} &amp; {{p2a42}} &amp; {{p2a43}} &amp; {{p2a44}} &amp; {{p2a45}} &amp; {{p2b4}} &amp; = -{{p2t4}}\\
+                {{p2a51}} &amp; {{p2a52}} &amp; {{p2a53}} &amp; {{p2a54}} &amp; {{p2a55}} &amp; {{p2b5}} &amp; = -{{p2t5}}\\
+                \hline
+                {{p2c1}} &amp; {{p2c2}} &amp; {{p2c3}} &amp; {{p2c4}} &amp; {{p2c5}} &amp; {{p2d}}\\
+                \hline
+                \end{array}
+            </me>
+        </p>
+        <p>
+            Pivoting on <m>a_{ {{pv3i}} {{pv3j}} }</m> produces:
+            <me>
+                \begin{array}{|ccccc|c|l}
+                {{p3x1}} &amp; {{p3x2}} &amp; {{p3x3}} &amp; {{p3x4}} &amp; {{p3x5}} &amp; -1\\
+                \hline
+                {{p3a11}} &amp; {{p3a12}} &amp; {{p3a13}} &amp; {{p3a14}} &amp; {{p3a15}} &amp; {{p3b1}} &amp; = -{{p3t1}}\\
+                {{p3a21}} &amp; {{p3a22}} &amp; {{p3a23}} &amp; {{p3a24}} &amp; {{p3a25}} &amp; {{p3b2}} &amp; = -{{p3t2}}\\
+                {{p3a31}} &amp; {{p3a32}} &amp; {{p3a33}} &amp; {{p3a34}} &amp; {{p3a35}} &amp; {{p3b3}} &amp; = -{{p3t3}}\\
+                {{p3a41}} &amp; {{p3a42}} &amp; {{p3a43}} &amp; {{p3a44}} &amp; {{p3a45}} &amp; {{p3b4}} &amp; = -{{p3t4}}\\
+                {{p3a51}} &amp; {{p3a52}} &amp; {{p3a53}} &amp; {{p3a54}} &amp; {{p3a55}} &amp; {{p3b5}} &amp; = -{{p3t5}}\\
+                \hline
+                {{p3c1}} &amp; {{p3c2}} &amp; {{p3c3}} &amp; {{p3c4}} &amp; {{p3c5}} &amp; {{p3d}}\\
+                \hline
+                \end{array}
+            </me>
         </p>
     </outtro>
 </knowl>
