@@ -67,6 +67,9 @@ class Generator(BaseGenerator):
         
         FinalD = randrange(-20,21)
         
+
+        VarName = ["x_1", "x_2", "x_3", "x_4", "x_5", "t_1", "t_2", "t_3", "t_4", "t_5", ]
+        shuffle(VarName)
         
         
 
@@ -114,6 +117,16 @@ class Generator(BaseGenerator):
             "pv2j": ShuffleJ[0]+1,
             "pv3i": ShuffleI[pivot3]+1,
             "pv3j": ShuffleJ[1]+1,
+            "x1": VarName[0],
+            "x2": VarName[1],
+            "x3": VarName[2],
+            "x4": VarName[3],
+            "x5": VarName[4],
+            "t1": VarName[5],
+            "t2": VarName[6],
+            "t3": VarName[7],
+            "t4": VarName[8],
+            "t5": VarName[9],
             
             
         }
