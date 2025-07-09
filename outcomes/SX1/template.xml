@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Consider the linear optimization problem encoded by the folloing tableau:
+        </p>
+        <p>
+            <me>
+                \begin{array}{|ccccc|c|}
+                \hline
+                {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{a14}} &amp; {{a15}} &amp; {{b1}}\\
+                {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{a24}} &amp; {{a25}} &amp; {{b2}}\\
+                {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} &amp; {{a35}} &amp; {{b3}}\\
+                {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{a45}} &amp; {{b4}}\\
+                {{a51}} &amp; {{a52}} &amp; {{a53}} &amp; {{a54}} &amp; {{a55}} &amp; {{b5}}\\
+                \hline
+                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{c5}} &amp; {{d}}\\
+                \hline
+                \end{array}
+            </me>
+        </p>
+        <p>
+            Identify the valid pivots according to the simplex algorithm.  Then pick one and perform it.
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <m>a_{ {{pv1i}} {{pv1j}} }</m>, <m>a_{ {{pv2i}} {{pv2j}} }</m> and <m>a_{ {{pv3i}} {{pv3j}} }</m>.
+        </p>
+    </outtro>
+</knowl>

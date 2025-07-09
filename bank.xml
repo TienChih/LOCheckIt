@@ -1,15 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
-    <title>New CheckIt Bank</title>
+    <title>Linear Optimization Bank</title>
     <slug>new-checkit-bank</slug>
     <url>https://checkit.clontz.org</url>
     <outcomes>
         <outcome>
-            <title>Sample Outcome</title>
-            <slug>EX1</slug>
-            <path>outcomes/EX1</path>
+            <title>Geometric Optimization</title>
+            <slug>GO1</slug>
+            <path>outcomes/GO1</path>
             <description>
-Simplify the sum of two monomials.
+Sketch the feasible region of a linear optimization problem and identify the optimal solution geomtrically.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Simplex Pivot</title>
+            <slug>SX1</slug>
+            <path>outcomes/SX1</path>
+            <description>
+Identify valid pivot positions in a tableau and be able to perform a simplex pivot.
             </description>
         </outcome>
     </outcomes>
