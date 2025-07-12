@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+        <intro>
+            <p>
+                For each of the following tableau, determine if the tableau currently indicates an unbounded feasible region, and
+                if it indicates an unbounded objective function.
+            </p>
+        </intro>
+        <!-- {{#tasks}} -->
+        <knowl>
+            <content>
+                <p>
+                    <me>
+                        \begin{array}{|ccccc|c|l}
+                        {{x1}} &amp; {{x2}} &amp; {{x3}} &amp; {{x4}} &amp; {{x5}} &amp; -1\\
+                        \hline
+                        {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{a14}} &amp; {{a15}} &amp; {{b1}} &amp; = -{{t1}}\\
+                        {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{a24}} &amp; {{a25}} &amp; {{b2}} &amp; = -{{t2}}\\
+                        {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} &amp; {{a35}} &amp; {{b3}} &amp; = -{{t3}}\\
+                        {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{a45}} &amp; {{b4}} &amp; = -{{t4}}\\
+                        {{a51}} &amp; {{a52}} &amp; {{a53}} &amp; {{a54}} &amp; {{a55}} &amp; {{b5}} &amp; = -{{t5}}\\
+                        \hline
+                        {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{c5}} &amp; {{d}}\\
+                        \hline
+                        \end{array}
+                    </me>
+                </p>
+            </content>
+            <outtro>
+                
+                <p>
+        This tableau
+                <!-- {{#unbregion}} -->
+                    <em>does</em>
+                <!-- {{/unbregion}} -->
+                <!-- {{^unbregion}} -->
+                    does <em>not</em>
+                <!-- {{/unbregion}} -->
+        indicate the linear optimization problem has an unbounded feasible region.
+                </p>
+                <p>
+        This tableau
+                <!-- {{#unbobjective}} -->
+                    <em>does</em>
+                <!-- {{/unbobjective}} -->
+                <!-- {{^unbobjective}} -->
+                    does <em>not</em>
+                <!-- {{/unbobjective}} -->
+        indicate the linear optimization problem has an unbounded objective function.
+                </p>
+            </outtro>
+        </knowl>
+<!-- {{/tasks}} -->
+</knowl>
+

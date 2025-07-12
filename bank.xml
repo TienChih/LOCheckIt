@@ -13,11 +13,35 @@ Sketch the feasible region of a linear optimization problem and identify the opt
             </description>
         </outcome>
         <outcome>
-            <title>Simplex Pivot</title>
+            <title>Simplex Pivots</title>
             <slug>SX1</slug>
             <path>outcomes/SX1</path>
             <description>
 Identify valid pivot positions in a tableau and be able to perform a simplex pivot.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Simplex Algorithm for Feasible Canonical Problems</title>
+            <slug>SX2a</slug>
+            <path>outcomes/SX2a</path>
+            <description>
+Find the optimal solution for feasible canonical problem.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Unboundedness</title>
+            <slug>SX3</slug>
+            <path>outcomes/SX3</path>
+            <description>
+Determine when a tableau indicates either an unbounded feasible region and/or unbounded objective function.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Feasibility</title>
+            <slug>SX5</slug>
+            <path>outcomes/SX5</path>
+            <description>
+Determine when a tableau indicates either an unbounded feasible region and/or unbounded objective function.
             </description>
         </outcome>
     </outcomes>
