@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+            <p>
+                For each of the following tableau, use the simplex algorithm to determine if the given linear optimization
+                problem achieves optimality, or if the problem is infeasible or unbounded.
+            </p>
+        </intro>
+        <!-- {{#tasks}} -->
+        <knowl>
+            <content>
+        <p>
+            Maximize  <m>f(x_1, x_2, x_3) = {{objectivefunction}}</m> subject to:
+            <me>
+                \begin{array}{rcl} 
+                    {{row1}} &amp; \leq &amp; {{b1}} \\
+                    {{row2}} &amp; \leq &amp; {{b2}} \\
+                    {{row3}} &amp; \leq &amp; {{b3}} \\
+                    x_1, x_2, x_3 &amp; \geq  &amp; 0. 
+                \end{array}
+            </me>
+        </p>
+        
+        
+    </content>
+            <outtro>
+                
+                <p>
+            The initial tableau should look like:
+            <me>
+                \begin{array}{|ccc|c|l}
+                x_1 &amp; x_2 &amp; x_3 &amp; -1\\
+                \hline
+                {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{b1}} &amp; = -t_1\\
+                {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{b2}} &amp; = -t_2\\
+                {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{b3}} &amp; = -t_3\\
+                \hline
+                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{d}}\\
+                \hline
+                \end{array}
+            </me>
+        </p>
+        <p>
+            The final tableau should be something like:
+            <me>
+                \begin{array}{|ccc|c|l}
+                {{x1}} &amp; {{x2}} &amp; {{x3}}  &amp; -1\\
+                \hline
+                {{Fa11}} &amp; {{Fa12}} &amp; {{Fa13}}  &amp; {{Fb1}} &amp; = -{{t1}}\\
+                {{Fa21}} &amp; {{Fa22}} &amp; {{Fa23}}  &amp; {{Fb2}} &amp; = -{{t2}}\\
+                {{Fa31}} &amp; {{Fa32}} &amp; {{Fa33}}  &amp; {{Fb3}} &amp; = -{{t3}}\\
+                \hline
+                {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}} &amp;{{Fd}}\\
+                \hline
+                \end{array}
+            </me>
+            
+        </p>
+                <p>
+                <!-- {{#unbobjective}} -->
+                    The objective function is unbounded.
+                <!-- {{/unbobjective}} -->
+                <!-- {{#optimal}} -->
+                    The optimal solution occurs when <m>x_1 = {{x1value}}</m>, <m>x_2 = {{x2value}}</m>, and <m>x_3 = {{x3value}}</m>.
+            The optimal objective value is <m>f({{x1value}}, {{x2value}}, {{x3value}}) = {{optimalsolution}}</m>.
+                <!-- {{/optimal}} -->
+                <!-- {{#emptyregion}} -->
+                    The feasible region is empty.
+                <!-- {{/emptyregion}} -->
+                </p>
+            </outtro>
+        </knowl>
+<!-- {{/tasks}} -->
+</knowl>
+
+
+
+    

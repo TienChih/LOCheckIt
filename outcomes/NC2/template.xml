@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Suppose we wish to maximize <m>f(x_1, x_2) = {{objectivefunction}}</m> subject to:
+            <me>
+                \begin{array}{rcl} 
+                    {{row1}} &amp;  = &amp; {{b1}} \\
+                    {{row2}} &amp;  = &amp; {{b2}} \\
+                    x_1, x_2, x_3, x_4  &amp; \geq &amp; 0 \\
+                \end{array}
+            </me>
+        </p>
+        <p>
+            Encode this noncanonical problem in a tableau and use pivots to convert the problem into a canonical problem.
+        </p>
+        
+    </content>
+    <outtro>
+        <p>
+            The initial tableau should look like:
+            <me>
+                \begin{array}{|cccc|c|l}
+                x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; -1\\
+                \hline
+                {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{a14}} &amp; {{b1}} &amp; = 0\\
+                {{a21}} &amp; {{a22}} &amp;  {{a23}} &amp; {{a24}} &amp; {{b2}} &amp; = 0\\
+                \hline
+                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{d}}\\
+                \hline
+                \end{array}
+            </me>
+        </p>
+        <p>
+            The final tableau should be something like:
+            <me>
+                \begin{array}{|cc|c|l}
+                {{x1}} &amp; {{x2}} &amp;  -1\\
+                \hline
+                {{Fa11}} &amp; {{Fa12}} &amp; {{Fb1}} &amp; = -{{t1}}\\
+                {{Fa21}} &amp; {{Fa22}} &amp;  {{Fb2}} &amp; = -{{t2}}\\
+                \hline
+                {{Fc1}} &amp; {{Fc2}} &amp;  {{Fd}}\\
+                \hline
+                \end{array}
+            </me>
+            This is a feasible canonical problem and we may proceed as usual.
+        </p>
+        
+    </outtro>
+</knowl>
+
+
+
+    

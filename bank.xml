@@ -22,8 +22,8 @@ Identify valid pivot positions in a tableau and be able to perform a simplex piv
         </outcome>
         <outcome>
             <title>Simplex Algorithm for Feasible Canonical Problems</title>
-            <slug>SX2a</slug>
-            <path>outcomes/SX2a</path>
+            <slug>SX2</slug>
+            <path>outcomes/SX2</path>
             <description>
 Find the optimal solution for feasible canonical problem.
             </description>
@@ -37,11 +37,51 @@ Determine when a tableau indicates either an unbounded feasible region and/or un
             </description>
         </outcome>
         <outcome>
+            <title>Simplex Algorithm for Unbounded Problems</title>
+            <slug>SX4</slug>
+            <path>outcomes/SX4</path>
+            <description>
+Identify when the objective function for a linear optimization problem with unbounded feasible region still has an optimal solution.
+            </description>
+        </outcome>
+        <outcome>
             <title>Feasibility</title>
             <slug>SX5</slug>
             <path>outcomes/SX5</path>
             <description>
 Determine when a tableau indicates either an unbounded feasible region and/or unbounded objective function.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Simplex Algorithm for Infeasible Problems</title>
+            <slug>SX6</slug>
+            <path>outcomes/SX6</path>
+            <description>
+Determine via the simplex algorithm whether a problem with infeasible basic solution has an empty feasible region or not.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Solving Linear Optimization Problems</title>
+            <slug>SX7</slug>
+            <path>outcomes/SX7</path>
+            <description>
+Given a linear optimization problem, either solve it or determine if it is infeasible or unbounded.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Unconstrained Variables</title>
+            <slug>NC1</slug>
+            <path>outcomes/NC1</path>
+            <description>
+Convert a noncanonical linear optimization problem with unconstrained variables into a canonical problem.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Equality Constraints</title>
+            <slug>NC2</slug>
+            <path>outcomes/NC2</path>
+            <description>
+Convert a noncanonical linear optimization problem with equality constraints into a canonical problem.
             </description>
         </outcome>
     </outcomes>
