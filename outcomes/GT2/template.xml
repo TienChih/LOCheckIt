@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Suppose we had a zero sum game with payoff matrix:
+            <me>
+                {{payoff}}
+            </me>
+        
+            Find the optimal mixed strategy for both players for this game.  Then identify the vonNuemann 
+            value of the game and state which player is favored.
+        </p>
+        
+    </content>
+    <outtro>
+        <p>
+            After domination the payoff matrix should look like: <me>{{domination}}</me> with row strategies
+            {{r1strat}}, {{r2strat}} and {{r3strat}} remaining, and column strategies {{c1strat}}, {{c2strat}} and {{c3strat}} remaining.
+        </p>
+        <p>
+            The initial tableau should look like:
+            <me>
+                 \begin{array}{r|cccc|c|l}
+                &amp; v &amp; q_1 &amp; q_2 &amp; q_3 &amp; -1\\
+                \hline
+                u &amp; {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{a14}} &amp; {{b1}} &amp; = 0\\
+                p_1 &amp; {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{a24}} &amp; {{b2}} &amp; = -t_1\\
+                p_2 &amp; {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} &amp; {{b3}} &amp; = -t_2\\
+                p_3 &amp; {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{b4}} &amp; = -t_3\\
+                \hline
+                -1 &amp; {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{d}}\\
+                \hline
+                &amp; =0 &amp; =s_1 &amp; =s_2 &amp; =s_3
+                \end{array}
+            </me>
+            with <m>u,v</m> allowed to be negative.
+        </p>
+        <p>
+            The final tableau should be something like:
+            <me>
+                 \begin{array}{r|ccc|c|l}
+                &amp; {{x1}} &amp; {{x2}} &amp; {{x3}} &amp; -1\\
+                \hline
+                {{y1}} &amp; {{Fa11}} &amp; {{Fa12}} &amp; {{Fa13}} &amp; {{Fb1}} &amp; = -{{t1}}\\
+                {{y2}} &amp; {{Fa21}} &amp; {{Fa22}} &amp; {{Fa23}} &amp;  {{Fb2}} &amp; = -{{t2}}\\
+                {{y3}} &amp; {{Fa31}} &amp; {{Fa32}} &amp; {{Fa33}} &amp; {{Fb3}} &amp; = -{{t3}}\\
+                \hline
+                -1 &amp; {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}}  &amp; {{Fd}}\\
+                \hline
+                 &amp; ={{s1}} &amp; ={{s2}} &amp; ={{s3}} &amp;
+                \end{array}
+            </me>
+            For the row player strategy {{r1strat}} should be played <m>{{y1value}}</m> of the time,
+            strategy {{r2strat}}  should be played <m>{{y2value}}</m> of the time, and
+            strategy {{r3strat}}  should be played <m>{{y3value}}</m> of the time.
+            For the  column player  {{c1strat}}  should be played <m>{{x1value}}</m> of the time,
+            strategy {{c2strat}}  should be played <m>{{x2value}}</m> of the time, and
+            strategy {{c3strat}}  should be played <m>{{x3value}}</m> of the time.
+            The vonNuemann value of the game is <m>{{optimalsolution}}</m>, so the game {{conclusion}}.
+        </p>
+        
+    </outtro>
+</knowl>
+
+
+
+    

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Suppose that {{product1}} sells for $<m>{{c1}}</m> a unit and requires <m>{{a11}}</m> units of {{material1}}, 
+            <m>{{a21}}</m> units of {{material2}}, <m>{{a31}}</m> units of {{material3}}, and <m>{{a41}}</m> units of {{material4}}.
+            {{product2}} sells for $<m>{{c2}}</m> a unit and requires <m>{{a12}}</m> units of {{material1}}, 
+            <m>{{a22}}</m> units of {{material2}}, <m>{{a32}}</m> units of {{material3}}, and <m>{{a42}}</m> units of {{material4}}.
+            {{product3}} sells for $<m>{{c3}}</m> a unit and requires <m>{{a13}}</m> units of {{material1}}, 
+            <m>{{a23}}</m> units of {{material2}}, <m>{{a33}}</m> units of {{material3}}, and <m>{{a43}}</m> units of {{material4}}.
+            {{product4}} sells for $<m>{{c4}}</m> a unit and requires <m>{{a14}}</m> units of {{material1}}, 
+            <m>{{a24}}</m> units of {{material2}}, <m>{{a34}}</m> units of {{material3}}, and <m>{{a44}}</m> units of {{material4}}.
+            There are <m>{{b1}}</m> units of {{material1}}, <m>{{b2}}</m> units of {{material2}}, <m>{{b3}}</m> units of {{material3}},
+            <m>{{b4}}</m> units of {{material4}}.  We wish to maximize revenue.  For each material, if one were to recieve one more unit of
+            each material, how would that change the optimal revenue?
+        </p>
+        
+    </content>
+    <outtro>
+        <p>
+            The initial tableau should look like:
+            <me>
+                \begin{array}{|cccc|c|l}
+                x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; -1\\
+                \hline
+                {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{a14}} &amp; {{b1}} &amp; = -t_1\\
+                {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{a24}} &amp; {{b2}} &amp; = -t_2\\
+                {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} &amp; {{b3}} &amp; = -t_3\\
+                {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{b4}} &amp; = -t_4\\
+                \hline
+                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{d}}\\
+                \hline
+                \end{array}
+            </me>
+        </p>
+        <p>
+            The final tableau should be something like:
+            <me>
+                \begin{array}{|cccc|c|l}
+                {{x1}} &amp; {{x2}} &amp; {{x3}} &amp; {{x4}}  &amp; -1\\
+                \hline
+                {{Fa11}} &amp; {{Fa12}} &amp; {{Fa13}} &amp; {{Fa14}} &amp; {{Fb1}} &amp; = -{{t1}}\\
+                {{Fa21}} &amp; {{Fa22}} &amp; {{Fa23}} &amp; {{Fa24}} &amp; {{Fb2}} &amp; = -{{t2}}\\
+                {{Fa31}} &amp; {{Fa32}} &amp; {{Fa33}} &amp; {{Fa34}} &amp; {{Fb3}} &amp; = -{{t3}}\\
+                {{Fa41}} &amp; {{Fa42}} &amp; {{Fa43}} &amp; {{Fa44}} &amp; {{Fb4}} &amp; = -{{t4}}\\
+                \hline
+                {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}} &amp; {{Fc4}} &amp; {{Fd}}\\
+                \hline
+                \end{array}
+            </me>
+            Increasing the quantity of {{material1}} by one unit would increase the maximum revenue by <m>{{y1value}}</m> dollars.
+            Increasing the quantity of {{material2}} by one unit would increase the maximum revenue by <m>{{y2value}}</m> dollars.
+            Increasing the quantity of {{material3}} by one unit would increase the maximum revenue by <m>{{y3value}}</m> dollars.
+            Increasing the quantity of {{material4}} by one unit would increase the maximum revenue by <m>{{y4value}}</m> dollars.
+        </p>
+
+        
+    </outtro>
+</knowl>
+
+
+
+    

@@ -84,5 +84,38 @@ Convert a noncanonical linear optimization problem with unconstrained variables 
 Convert a noncanonical linear optimization problem with equality constraints into a canonical problem.
             </description>
         </outcome>
+        <outcome>
+            <title>Noncanonical Problems</title>
+            <slug>NC3</slug>
+            <path>outcomes/NC3</path>
+            <description>
+Solve a noncanonical linear optimization problem.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Optimal Pure Strategies</title>
+            <slug>GT1</slug>
+            <path>outcomes/GT1</path>
+            <description>
+Find the optimal  strategy for both players for a zero sum game.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Optimal Mixed Strategies</title>
+            <slug>GT2</slug>
+            <path>outcomes/GT2</path>
+            <description>
+Find the optimal mixed strategy for both players for a zero sum game.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Sensitivity Analysis</title>
+            <slug>DU1</slug>
+            <path>outcomes/DU1</path>
+            <description>
+Find the change in the optimal solution of an objective function corresponding to changes in constraints.
+            </description>
+        </outcome>
+
     </outcomes>
 </bank>

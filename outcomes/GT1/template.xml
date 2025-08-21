@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Suppose we had a zero sum game with payoff matrix:
+            <me>
+                {{payoff}}
+            </me>
+        
+            Find the optimal mixed strategy for both players for this game.  Then identify the vonNuemann 
+            value of the game and state which player is favored.
+        </p>
+        
+    </content>
+    <outtro>
+        <p>
+            After domination the payoff matrix should look like: <me>{{domination}}</me> with row strategies
+            {{r1strat}}, {{r2strat}} and {{r3strat}} remaining, and column strategies {{c1strat}}, {{c2strat}} and {{c3strat}} remaining.
+        </p>
+        <p>
+            Since {{optimalsolution}} is a saddle point corresponding to row strategy {{ropt}} and
+            column strategy {{copt}}, these are the optimal strategies for both players.  
+            The vonNuemann value of the game is {{optimalsolution}}, so the game {{conclusion}}.
+        </p>
+        
+    </outtro>
+</knowl>
+
+
+
+    
