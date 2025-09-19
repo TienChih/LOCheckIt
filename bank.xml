@@ -92,6 +92,49 @@ Convert a noncanonical linear optimization problem with equality constraints int
 Solve a noncanonical linear optimization problem.
             </description>
         </outcome>
+        
+        <outcome>
+            <title>Sensitivity Analysis</title>
+            <slug>DU1</slug>
+            <path>outcomes/DU1</path>
+            <description>
+Find the change in the optimal solution of an objective function corresponding to changes in constraints.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Dual Tableau</title>
+            <slug>DU2</slug>
+            <path>outcomes/DU2</path>
+            <description>
+Determine when a tableau indicates, infeasibility, unboundedness or optimality for the dual problem.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Dual Simplex Algorithm</title>
+            <slug>DU3</slug>
+            <path>outcomes/DU3</path>
+            <description>
+Given a primal max problem, state the dual problem and use the simplex algorithm to solve it.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Solving Dual Problems</title>
+            <slug>DU4</slug>
+            <path>outcomes/DU4</path>
+            <description>
+Given a primal max problem, state the dual problem and use the simplex algorithm to either find the optimal solution,
+or determine if the dual is infeasible or unbounded.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Noncanonical Dual Problems</title>
+            <slug>DU5</slug>
+            <path>outcomes/DU5</path>
+            <description>
+Solve the dual problem to a noncanonical linear optimization problem.
+            </description>
+        </outcome>
+
         <outcome>
             <title>Optimal Pure Strategies</title>
             <slug>GT1</slug>
@@ -109,11 +152,47 @@ Find the optimal mixed strategy for both players for a zero sum game.
             </description>
         </outcome>
         <outcome>
-            <title>Sensitivity Analysis</title>
-            <slug>DU1</slug>
-            <path>outcomes/DU1</path>
+            <title>Determining Payoff Matrices</title>
+            <slug>GT3</slug>
+            <path>outcomes/GT3</path>
             <description>
-Find the change in the optimal solution of an objective function corresponding to changes in constraints.
+Find the payoff matrix for a given game.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Games of Chance</title>
+            <slug>GT4</slug>
+            <path>outcomes/GT4</path>
+            <description>
+Find the payoff matrix for a given game of chance.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Transportation Problem</title>
+            <slug>TA1</slug>
+            <path>outcomes/TA1</path>
+            <description>
+Given a transportation problem, find the shipping schedule which minimizes shipping cost.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Transportation Modeling</title>
+            <slug>TA2</slug>
+            <path>outcomes/TA2</path>
+            <description>
+FIXME
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Assignment Problem</title>
+            <slug>TA3</slug>
+            <path>outcomes/TA3</path>
+            <description>
+Given an assignment problem, find the assignment that minimizes cost.
             </description>
         </outcome>
 

@@ -2,7 +2,8 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
             <p>
-                For each of the following tableau, use the simplex algorithm to determine if the given linear optimization
+                For each of the following linear optimization problems, 
+                use the simplex algorithm to determine if the given linear optimization
                 problem achieves optimality, or if the problem is infeasible or unbounded.
             </p>
         </intro>
@@ -35,7 +36,7 @@
                 {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{b2}} &amp; = -t_2\\
                 {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{b3}} &amp; = -t_3\\
                 \hline
-                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{d}}\\
+                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{d}}&amp; =f\\
                 \hline
                 \end{array}
             </me>
@@ -50,7 +51,7 @@
                 {{Fa21}} &amp; {{Fa22}} &amp; {{Fa23}}  &amp; {{Fb2}} &amp; = -{{t2}}\\
                 {{Fa31}} &amp; {{Fa32}} &amp; {{Fa33}}  &amp; {{Fb3}} &amp; = -{{t3}}\\
                 \hline
-                {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}} &amp;{{Fd}}\\
+                {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}} &amp;{{Fd}}&amp; =f\\
                 \hline
                 \end{array}
             </me>
@@ -58,7 +59,7 @@
         </p>
                 <p>
                 <!-- {{#unbobjective}} -->
-                    The objective function is unbounded.
+                    The objective function is unbounded (above).
                 <!-- {{/unbobjective}} -->
                 <!-- {{#optimal}} -->
                     The optimal solution occurs when <m>x_1 = {{x1value}}</m>, <m>x_2 = {{x2value}}</m>, and <m>x_3 = {{x3value}}</m>.

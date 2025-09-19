@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+        <intro>
+            <p>
+                For each of the following tableau, determine if the tableau currently indicates an infeasible basic solution, and
+                if it indicates an infeasible feasible region.
+            </p>
+        </intro>
+        <!-- {{#tasks}} -->
+        <knowl>
+            <content>
+                <p>
+                    <me>
+                        \begin{array}{c|ccccc|c|l}
+                        &amp;{{x1}} &amp; {{x2}} &amp; {{x3}} &amp; {{x4}} &amp; {{x5}} &amp; -1\\
+                        \hline
+                        {{y1}} &amp; {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{a14}} &amp; {{a15}} &amp; {{b1}} &amp; = -{{t1}}\\
+                        {{y2}} &amp; {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{a24}} &amp; {{a25}} &amp; {{b2}} &amp; = -{{t2}}\\
+                        {{y3}} &amp; {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} &amp; {{a35}} &amp; {{b3}} &amp; = -{{t3}}\\
+                        {{y4}} &amp; {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{a45}} &amp; {{b4}} &amp; = -{{t4}}\\
+                        {{y1}} &amp; {{a51}} &amp; {{a52}} &amp; {{a53}} &amp; {{a54}} &amp; {{a55}} &amp; {{b5}} &amp; = -{{t5}}\\
+                        \hline
+                        -1 &amp; {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{c5}} &amp; {{d}} &amp;=f\\
+                        \hline
+                         &amp; {{s1}} &amp; {{s2}} &amp; {{s3}} &amp; {{s4}} &amp; {{s5}} &amp; =g &amp;
+                        \end{array}
+                    </me>
+                </p>
+            </content>
+            <outtro>
+            
+
+                <!-- {{#infsolution}} -->
+                <p>
+                This tableau indicates that the basic dual solution is infeasible.
+                </p>
+                <!-- {{/infsolution}} -->     
+                <!-- {{#feasible}} -->
+                <p>
+                    This tableau indicates the basic dual solution is feasible.
+                </p>    
+                <!-- {{/feasible}} -->    
+
+                <!-- {{#infregion}} -->
+                <p>
+                    This tableau indicates that the dual problem is infeasible.
+                </p>
+                <!-- {{/infregion}} -->
+
+                <!-- {{#unboundedregion}} -->
+                <p>
+                    This tableau indicates that the dual problem has unbounded feasible region.
+                </p>    
+                <!-- {{/unboundedregion}} --> 
+                <!-- {{#unboundedobjective}} -->
+                <p>
+                    This tableau indicates that the dual problem has unbounded (below) objective function.
+                </p>    
+                <!-- {{/unboundedobjective}} --> 
+                
+                <!-- {{#optimal}} -->
+                <p>
+                    This tableau indicates the basic dual solution is optimal.
+                </p>    
+                <!-- {{/optimal}} --> 
+
+                
+
+                
+
+                
+        
+
+            </outtro>
+        </knowl>
+<!-- {{/tasks}} -->
+</knowl>
+

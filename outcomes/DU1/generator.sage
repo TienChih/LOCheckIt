@@ -47,6 +47,8 @@ class Generator(BaseGenerator):
         InitialC = [0,0,0,0]
         InitialD = 0
 
+        dummyrandom = randrange(1,1000000)
+
 
 
         point = [randrange(3,11),randrange(3,11),randrange(3,11),0]
@@ -82,12 +84,10 @@ class Generator(BaseGenerator):
                 AfterC = mC*MI
                 dummy2 = Rational(min([AfterC[0][0], AfterC[0][1], AfterC[0][2], AfterC[0][3], ]))
                 dummy3 = Rational(min(InitialC))
-                print(dummy2)
 
             
         
         
-        print("done")
 
         
             

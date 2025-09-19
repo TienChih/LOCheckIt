@@ -30,7 +30,7 @@
                 {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} &amp; {{b3}} &amp; = -t_3\\
                 {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{b4}} &amp; = -t_4\\
                 \hline
-                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{d}}\\
+                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{d}}&amp; =f\\
                 \hline
                 \end{array}
             </me>
@@ -46,7 +46,7 @@
                 {{Fa31}} &amp; {{Fa32}} &amp; {{Fa33}} &amp; {{Fa34}} &amp; {{Fb3}} &amp; = -{{t3}}\\
                 {{Fa41}} &amp; {{Fa42}} &amp; {{Fa43}} &amp; {{Fa44}} &amp; {{Fb4}} &amp; = -{{t4}}\\
                 \hline
-                {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}} &amp; {{Fc4}} &amp; {{Fd}}\\
+                {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}} &amp; {{Fc4}} &amp; {{Fd}}&amp; =f\\
                 \hline
                 \end{array}
             </me>

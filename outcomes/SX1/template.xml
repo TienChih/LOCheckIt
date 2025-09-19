@@ -15,7 +15,7 @@
                 {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{a45}} &amp; {{b4}} &amp; = -{{t4}}\\
                 {{a51}} &amp; {{a52}} &amp; {{a53}} &amp; {{a54}} &amp; {{a55}} &amp; {{b5}} &amp; = -{{t5}}\\
                 \hline
-                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{c5}} &amp; {{d}}\\
+                {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{c5}} &amp; {{d}}&amp; =f\\
                 \hline
                 \end{array}
             </me>
@@ -40,7 +40,7 @@
                 {{p1a41}} &amp; {{p1a42}} &amp; {{p1a43}} &amp; {{p1a44}} &amp; {{p1a45}} &amp; {{p1b4}} &amp; = -{{p1t4}}\\
                 {{p1a51}} &amp; {{p1a52}} &amp; {{p1a53}} &amp; {{p1a54}} &amp; {{p1a55}} &amp; {{p1b5}} &amp; = -{{p1t5}}\\
                 \hline
-                {{p1c1}} &amp; {{p1c2}} &amp; {{p1c3}} &amp; {{p1c4}} &amp; {{p1c5}} &amp; {{p1d}}\\
+                {{p1c1}} &amp; {{p1c2}} &amp; {{p1c3}} &amp; {{p1c4}} &amp; {{p1c5}} &amp; {{p1d}}&amp; =f\\
                 \hline
                 \end{array}
             </me>
@@ -57,7 +57,7 @@
                 {{p2a41}} &amp; {{p2a42}} &amp; {{p2a43}} &amp; {{p2a44}} &amp; {{p2a45}} &amp; {{p2b4}} &amp; = -{{p2t4}}\\
                 {{p2a51}} &amp; {{p2a52}} &amp; {{p2a53}} &amp; {{p2a54}} &amp; {{p2a55}} &amp; {{p2b5}} &amp; = -{{p2t5}}\\
                 \hline
-                {{p2c1}} &amp; {{p2c2}} &amp; {{p2c3}} &amp; {{p2c4}} &amp; {{p2c5}} &amp; {{p2d}}\\
+                {{p2c1}} &amp; {{p2c2}} &amp; {{p2c3}} &amp; {{p2c4}} &amp; {{p2c5}} &amp; {{p2d}}&amp; =f\\
                 \hline
                 \end{array}
             </me>
@@ -74,7 +74,7 @@
                 {{p3a41}} &amp; {{p3a42}} &amp; {{p3a43}} &amp; {{p3a44}} &amp; {{p3a45}} &amp; {{p3b4}} &amp; = -{{p3t4}}\\
                 {{p3a51}} &amp; {{p3a52}} &amp; {{p3a53}} &amp; {{p3a54}} &amp; {{p3a55}} &amp; {{p3b5}} &amp; = -{{p3t5}}\\
                 \hline
-                {{p3c1}} &amp; {{p3c2}} &amp; {{p3c3}} &amp; {{p3c4}} &amp; {{p3c5}} &amp; {{p3d}}\\
+                {{p3c1}} &amp; {{p3c2}} &amp; {{p3c3}} &amp; {{p3c4}} &amp; {{p3c5}} &amp; {{p3d}}&amp; =f\\
                 \hline
                 \end{array}
             </me>

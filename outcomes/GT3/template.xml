@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <!-- {{#cards}} -->
+        <content>
+            <p>
+                Rowan and Colleen are playing a card game together.  
+                Rowan is dealt a {{rn1}} of {{rsuit1}}, {{rn2}} of {{rsuit2}}, {{rn3}} of {{rsuit3}}, and a {{rn4}} of {{rsuit4}}.
+                Colleen is dealt a {{cn1}} of {{csuit1}}, {{cn2}} of {{csuit2}}, {{cn3}} of {{csuit3}}, and a {{cn4}} of {{csuit4}}.
+                Each player picks a card in secret and places it face down on the table, then they flip them over at the same time.
+                If they suits are the same, Rowan wins points equal to the sum of the card values.  
+                Otherwise, Colleen wins points equal to the sum of the card values.
+            </p>
+            <p>
+                Write out the payoff matrix for this game.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+                    \begin{array}{c|cccc|}
+                &amp; {{cn1}}{{cs1}} &amp; {{cn2}}{{cs2}} &amp; {{cn3}}{{cs3}} &amp; {{cn4}}{{cs4}}\\
+                \hline
+                {{rn1}}{{rs1}} &amp; {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{a14}} \\
+                {{rn2}}{{rs2}}  &amp; {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{a24}} \\
+                {{rn3}}{{rs3}}  &amp; {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} \\
+                {{rn4}}{{rs4}}  &amp; {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}}\\
+                \hline
+                
+                \end{array}
+                </me>
+            </p>
+        </outtro>  
+    <!-- {{/cards}} -->
+    <!-- {{#difference}} -->
+        <content>
+            <p>
+                Each player Rowan and Colleen selects  a number from <m>1</m> through <m>{{n}}</m> and reveals them at the same time.
+                If the difference between selections is less than <m>{{m}}</m>, the player with the larger number wins points
+                equal to the sum of the selections.
+                Otherwise the player with the smaller number wins points
+                equal to the sum of the selections.
+                If the selections are equal, neither player wins any points.
+            </p>
+            <p>
+                Write out the payoff matrix for this game.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+                    \begin{array}{ r| {{#C}} {{c}} {{/C}} | }
+                    {{#col}} &amp; {{col}} {{/col}} \\
+                    \hline
+                    {{#data}}
+                        {{row}}
+                        {{#data2}}
+                          &amp;  {{entry}} 
+                        {{/data2}}
+                        \\
+                    {{/data}}
+                    \hline
+                    \end{array}
+                </me>
+            </p>
+        </outtro>  
+    <!-- {{/difference}} -->
+    <!-- {{#blotto}} -->
+        <content>
+            <p>
+                Colonel Rowan is attacking a town defended by Colonel Colleen. 
+                Rowan has <m>{{Rtroop}}</m> regiments and Colleen has <m>{{Ctroop}}</m>. 
+                There are two routes to the town. 
+                Rowan and select any number of regiments to attack along each route, up to a total of <m>{{Rtroop}}</m>
+                 and Colleen can likewise assign her <m>{{Ctroop}}</m> regiments along either route, neither knowing beforehand the other's strategy.
+            </p>
+            <p>
+                Along each route, whatever side has a greater number of regiments wins points equal to the 
+                number of regiments sent by the opposing side (as they capture those units). 
+                Furthermore, if Rowan wins along either route, he captures the town also worth one point.
+            </p>
+            <p>
+                Write out the payoff matrix for this game.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+                    \begin{array}{ r| {{#C}} {{c}} {{/C}} | }
+                    {{#col}} &amp; {{col}} {{/col}} \\
+                    \hline
+                    {{#data}}
+                        {{row}}
+                        {{#data2}}
+                          &amp;  {{entry}} 
+                        {{/data2}}
+                        \\
+                    {{/data}}
+                    \hline
+                    \end{array}
+                </me>
+            </p>
+        </outtro>  
+    <!-- {{/blotto}} -->
+
+    <!-- {{#evenodd}} -->
+        <content>
+            <p>
+                Each player Rowan and Colleen selects  a number from <m>1</m> through <m>{{n}}</m> and reveals them at the same time.
+                If they are the same, Rowan pays Colleen a number of dollars equal to the sum of the selections.
+                If they are different but the sum is even, Rowan pays Collen dollars equal to the difference between selections.
+                Otherwise the Colleen pays Rowan $<m>{{n}}</m>.
+            </p>
+            <p>
+                Write out the payoff matrix for this game.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+                    \begin{array}{ r| {{#C}} {{c}} {{/C}} | }
+                    {{#col}} &amp; {{col}} {{/col}} \\
+                    \hline
+                    {{#data}}
+                        {{row}}
+                        {{#data2}}
+                          &amp;  {{entry}} 
+                        {{/data2}}
+                        \\
+                    {{/data}}
+                    \hline
+                    \end{array}
+                </me>
+            </p>
+        </outtro>  
+    <!-- {{/evenodd}} -->
+</knowl>
+
+
+
+    

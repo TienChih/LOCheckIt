@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            A rental service needs to purchase {{good}}s to be rented for the next 4 days.
+            The demand for {{good}}s for these days are <m>{{M1}}, {{M2}}, {{M3}}, {{M4}}</m> each.  It costs
+            <m>{{newcost}}</m> credits to purchase them new.  
+            It costs <m>{{slowcost}}</m> credits to fix them up for use again after a full day of work.  This can be speed
+            up for <m>{{fastcost}}</m> credits to be ready the very next day.  How many new {{good}}s
+            should be purchased, and how many after each day should be fast fixed or slow fixed to minimize cost?
+        </p>
+        
+    </content>
+    <outtro>
+        <p>
+            <m>{{purchase}}</m> {{good}}s should be purchased new.  
+            After the first day, <m>{{day1fast}}</m> should be fast fixed, and <m>{{day1slow}}</m> should be slow fixed.  
+            After the second day, <m>{{day2fast}}</m> should be fast fixed, and <m>{{day2slow}}</m> should be slow fixed.  
+            After the third day, <m>{{day3fast}}</m> should be fast fixed.  
+            This results in a minimal cost of <m>{{optimalsolution}}</m> credits.
+        </p>
+        
+    </outtro>
+</knowl>

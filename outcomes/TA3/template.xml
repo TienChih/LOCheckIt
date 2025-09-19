@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Suppose we had five jobs to be done by five workers, each worker is to do exactly one job. The cost for job
+             <m>i</m> to be done by worker <m>j</m> (in thousands of dollars) is encoded in the following matrix:
+            <me>
+                {{A}}
+            </me>
+        </p>
+        <p>
+            Use the assignment algorithm to assign jobs to workers in a way that minimizes cost.
+        </p>
+        
+    </content>
+    <outtro>
+        
+        <p>
+            The minimal assignment cost may be achieved by assigning 
+            {{#data}}
+                  Job <m>{{W}}</m> to Worker <m>{{M}}</m>, 
+            {{/data}}
+            for total cost of <m>{{optimalsolution}}</m> thousand dollars (note that while this cost is unique, the specific assignment may not be).
+        </p>
+        
+    </outtro>
+</knowl>

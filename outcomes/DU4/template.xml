@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+            <p>
+                For each of the following linear optimization problems, state the dual problem.  T
+                hen use the simplex algorithm to determine if the dual linear optimization
+                problem achieves optimality, or if the dual problem is infeasible or unbounded.
+            </p>
+        </intro>
+        <!-- {{#tasks}} -->
+        <knowl>
+            <content>
+        <p>
+            Maximize  <m>f(x_1, x_2, x_3) = {{objectivefunction}}</m> subject to:
+            <me>
+                \begin{array}{rcl} 
+                    {{row1}} &amp; \leq &amp; {{b1}} \\
+                    {{row2}} &amp; \leq &amp; {{b2}} \\
+                    {{row3}} &amp; \leq &amp; {{b3}} \\
+                    x_1, x_2, x_3 &amp; \geq  &amp; 0. 
+                \end{array}
+            </me>
+        </p>
+        
+        
+    </content>
+            <outtro>
+
+            <p>
+                The dual problem is as follows: minimize  <m>g(y_1, y_2, y_3) = {{dualfunction}}</m> subject to:
+                <me>
+                    \begin{array}{rcl} 
+                        {{drow1}} &amp; \geq &amp; {{c1}} \\
+                        {{drow2}} &amp; \geq &amp; {{c2}} \\
+                        {{drow3}} &amp; \geq &amp; {{c3}} \\
+                        y_1, y_2, y_3 &amp; \geq  &amp; 0. 
+                    \end{array}
+                </me>
+            </p>
+                
+                <p>
+            The initial tableau should look like:
+            <me>
+                \begin{array}{r|ccc|c|l}
+                &amp; x_1 &amp; x_2 &amp; x_3 &amp; -1\\
+                \hline
+                y_1 &amp; {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{b1}} &amp; = -t_1\\
+                y_2 &amp; {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{b2}} &amp; = -t_2\\
+                y_3 &amp; {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{b3}} &amp; = -t_3\\
+                \hline
+                -1 &amp; {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{d}}&amp; =f\\
+                \hline
+                 &amp; s_1 &amp; s_2 &amp; s_3 &amp; =g &amp; 
+                \end{array}
+            </me>
+        </p>
+        <p>
+            The final tableau should be something like:
+            <me>
+                \begin{array}{r|ccc|c|l}
+                &amp; {{x1}} &amp; {{x2}} &amp; {{x3}}  &amp; -1\\
+                \hline
+                {{y1}} &amp; {{Fa11}} &amp; {{Fa12}} &amp; {{Fa13}}  &amp; {{Fb1}} &amp; = -{{t1}}\\
+                {{y2}} &amp; {{Fa21}} &amp; {{Fa22}} &amp; {{Fa23}}  &amp; {{Fb2}} &amp; = -{{t2}}\\
+                {{y3}} &amp; {{Fa31}} &amp; {{Fa32}} &amp; {{Fa33}}  &amp; {{Fb3}} &amp; = -{{t3}}\\
+                \hline
+                -1 &amp; {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}} &amp;{{Fd}}&amp; =f\\
+                \hline
+                &amp; {{s1}} &amp; {{s2}} &amp; {{s3}} &amp; =g &amp; 
+                \end{array}
+            </me>
+            
+        </p>
+                <p>
+                <!-- {{#unbobjective}} -->
+                    The dual feasible region is empty.
+                <!-- {{/unbobjective}} -->
+                <!-- {{#optimal}} -->
+                    The optimal solution occurs when <m>y_1 = {{y1value}}</m>, <m>y_2 = {{y2value}}</m>, and <m>y_3 = {{y3value}}</m>.
+            The optimal objective value is <m>g({{y1value}}, {{y2value}}, {{y3value}}) = {{optimalsolution}}</m>.
+                <!-- {{/optimal}} -->
+                <!-- {{#emptyregion}} -->
+                    The dual objective function is unbounded (below).
+                <!-- {{/emptyregion}} -->
+                </p>
+            </outtro>
+        </knowl>
+<!-- {{/tasks}} -->
+</knowl>
+
+
+
+    

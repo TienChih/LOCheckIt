@@ -28,9 +28,9 @@
                 p_2 &amp; {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} &amp; {{b3}} &amp; = -t_2\\
                 p_3 &amp; {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{b4}} &amp; = -t_3\\
                 \hline
-                -1 &amp; {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{d}}\\
+                -1 &amp; {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{d}} &amp; =f\\
                 \hline
-                &amp; =0 &amp; =s_1 &amp; =s_2 &amp; =s_3
+                &amp; =0 &amp; =s_1 &amp; =s_2 &amp; =s_3 &amp; =g
                 \end{array}
             </me>
             with <m>u,v</m> allowed to be negative.
@@ -45,9 +45,9 @@
                 {{y2}} &amp; {{Fa21}} &amp; {{Fa22}} &amp; {{Fa23}} &amp;  {{Fb2}} &amp; = -{{t2}}\\
                 {{y3}} &amp; {{Fa31}} &amp; {{Fa32}} &amp; {{Fa33}} &amp; {{Fb3}} &amp; = -{{t3}}\\
                 \hline
-                -1 &amp; {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}}  &amp; {{Fd}}\\
+                -1 &amp; {{Fc1}} &amp; {{Fc2}} &amp; {{Fc3}}  &amp; {{Fd}}&amp; =f\\
                 \hline
-                 &amp; ={{s1}} &amp; ={{s2}} &amp; ={{s3}} &amp;
+                 &amp; ={{s1}} &amp; ={{s2}} &amp; ={{s3}} &amp; =g
                 \end{array}
             </me>
             For the row player strategy {{r1strat}} should be played <m>{{y1value}}</m> of the time,

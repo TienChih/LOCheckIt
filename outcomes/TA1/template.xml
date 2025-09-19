@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Suppose we had four warehouses with <m>{{W1}}, {{W2}}, {{W3}}, {{W4}} </m> {{good}}s each, and
+            four markets who require <m>{{M1}}, {{M2}}, {{M3}}, {{M4}} </m> {{good}}s each. The cost to ship from
+            Warehouse <m>i</m> to Market <m>j</m> is encoded in the following matrix:
+            <me>
+                {{A}}
+            </me>
+        </p>
+        <p>
+            Encode this problem in a transportation tableau and use the transportation algorithm to find the 
+            shipping schedule which minimizes cost.
+        </p>
+        
+    </content>
+    <outtro>
+        <p>
+            The initial tableau should look like:
+            <me>
+                \begin{array}{|cccc|c}
+                \hline
+                {{a11}} &amp; {{a12}} &amp; {{a13}} &amp; {{a14}} &amp; {{W1}} \\
+                {{a21}} &amp; {{a22}} &amp; {{a23}} &amp; {{a24}} &amp; {{W2}} \\
+                {{a31}} &amp; {{a32}} &amp; {{a33}} &amp; {{a34}} &amp; {{W3}} \\
+                {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{W4}} \\
+                \hline
+                {{M1}} &amp; {{M2}} &amp; {{M3}} &amp; {{M4}} &amp; {{total}}
+                \end{array}
+            </me>
+        </p>
+        <p>
+            The minimal shipping cost may be achieved by shipping 
+            {{#data}}
+                  <m>{{Q}}</m> {{good}}s from Warehouse <m>{{W}}</m> to Market <m>{{M}}</m>, 
+            {{/data}}
+            for total cost of $<m>{{optimalsolution}}</m> (note that while this cost is unique, the shipping quantities may not be).
+        </p>
+        
+    </outtro>
+</knowl>

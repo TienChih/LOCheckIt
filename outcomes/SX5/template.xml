@@ -20,7 +20,7 @@
                         {{a41}} &amp; {{a42}} &amp; {{a43}} &amp; {{a44}} &amp; {{a45}} &amp; {{b4}} &amp; = -{{t4}}\\
                         {{a51}} &amp; {{a52}} &amp; {{a53}} &amp; {{a54}} &amp; {{a55}} &amp; {{b5}} &amp; = -{{t5}}\\
                         \hline
-                        {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{c5}} &amp; {{d}}\\
+                        {{c1}} &amp; {{c2}} &amp; {{c3}} &amp; {{c4}} &amp; {{c5}} &amp; {{d}}&amp; =f\\
                         \hline
                         \end{array}
                     </me>
