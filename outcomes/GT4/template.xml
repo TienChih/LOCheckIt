@@ -4,7 +4,7 @@
         <content>
             <p>
                 Rowan and Collen each put $<m>{{pool}}</m> into the pot.  Then 4 Jacks, 4 Queens and 4 Kings are shuffled, and then one card each is dealt to Rowan and Colleen.  They may each see their own card but not their opponents.
-                Rowan may either fold, in which case Colleen takes the entire pot, or they may raise by $<m>{{bet}}</m>, putting this value into the pot.  If Rowan raises, then either Colleen folds, in which case Rowan takes the pot, or calls, also placing
+                Rowan may either <em>Fold</em>, in which case Colleen takes the entire pot, or they may <em>Raise</em> by $<m>{{bet}}</m>, putting this value into the pot.  If Rowan raises, then either Colleen <em>Fold</em>s, in which case Rowan takes the pot, or <em>Calls</em>, also placing
                 $<m>{{bet}}</m> into the pot.  If Colleen calls, both player reveals their cards, and the player with the higher card (with Jack &lt; Queen &lt; King) takes the pot. In the case of a tie they split the pot.
 
             </p>
@@ -21,7 +21,7 @@
                     {{#data}}
                         {{row}}
                         {{#data2}}
-                          &amp;  {{entry}} 
+                          &amp;  \small {{entry}} 
                         {{/data2}}
                         \\
                     {{/data}}
@@ -31,84 +31,13 @@
             </p>
         </outtro>  
     <!-- {{/cards}} -->
-    <!-- {{#difference}} -->
+    <!-- {{#coins}} -->
         <content>
             <p>
-                Each player Rowan and Colleen selects  a number from <m>1</m> through <m>{{n}}</m> and reveals them at the same time.
-                If the difference between selections is less than <m>{{m}}</m>, the player with the larger number wins points
-                equal to the sum of the selections.
-                Otherwise the player with the smaller number wins points
-                equal to the sum of the selections.
-                If the selections are equal, neither player wins any points.
-            </p>
-            <p>
-                Write out the payoff matrix for this game.
-            </p>
-        </content>
-        <outtro>
-            <p>
-                <me>
-                    \begin{array}{ r| {{#C}} {{c}} {{/C}} | }
-                    {{#col}} &amp; {{col}} {{/col}} \\
-                    \hline
-                    {{#data}}
-                        {{row}}
-                        {{#data2}}
-                          &amp;  {{entry}} 
-                        {{/data2}}
-                        \\
-                    {{/data}}
-                    \hline
-                    \end{array}
-                </me>
-            </p>
-        </outtro>  
-    <!-- {{/difference}} -->
-    <!-- {{#blotto}} -->
-        <content>
-            <p>
-                Colonel Rowan is attacking a town defended by Colonel Colleen. 
-                Rowan has <m>{{Rtroop}}</m> regiments and Colleen has <m>{{Ctroop}}</m>. 
-                There are two routes to the town. 
-                Rowan and select any number of regiments to attack along each route, up to a total of <m>{{Rtroop}}</m>
-                 and Colleen can likewise assign her <m>{{Ctroop}}</m> regiments along either route, neither knowing beforehand the other's strategy.
-            </p>
-            <p>
-                Along each route, whatever side has a greater number of regiments wins points equal to the 
-                number of regiments sent by the opposing side (as they capture those units). 
-                Furthermore, if Rowan wins along either route, he captures the town also worth one point.
-            </p>
-            <p>
-                Write out the payoff matrix for this game.
-            </p>
-        </content>
-        <outtro>
-            <p>
-                <me>
-                    \begin{array}{ r| {{#C}} {{c}} {{/C}} | }
-                    {{#col}} &amp; {{col}} {{/col}} \\
-                    \hline
-                    {{#data}}
-                        {{row}}
-                        {{#data2}}
-                          &amp;  {{entry}} 
-                        {{/data2}}
-                        \\
-                    {{/data}}
-                    \hline
-                    \end{array}
-                </me>
-            </p>
-        </outtro>  
-    <!-- {{/blotto}} -->
+                Rowan and Collen each put $<m>{{pool}}</m> into the pot.  They then each flip two coins in secret and count the number of heads.
+                Rowan may either <em>Fold</em>, in which case Colleen takes the entire pot, or they may <em>Raise</em> by $<m>{{bet}}</m>, putting this value into the pot.  If Rowan raises, then either Colleen <em>Fold</em>s, in which case Rowan takes the pot, or <em>Calls</em>, also placing
+                $<m>{{bet}}</m> into the pot.  If Colleen calls, both player reveals their coins, and the player with the higher number of heads takes the pot. In the case of a tie they split the pot.
 
-    <!-- {{#evenodd}} -->
-        <content>
-            <p>
-                Each player Rowan and Colleen selects  a number from <m>1</m> through <m>{{n}}</m> and reveals them at the same time.
-                If they are the same, Rowan pays Colleen a number of dollars equal to the sum of the selections.
-                If they are different but the sum is even, Rowan pays Collen dollars equal to the difference between selections.
-                Otherwise the Colleen pays Rowan $<m>{{n}}</m>.
             </p>
             <p>
                 Write out the payoff matrix for this game.
@@ -123,7 +52,7 @@
                     {{#data}}
                         {{row}}
                         {{#data2}}
-                          &amp;  {{entry}} 
+                          &amp; \small {{entry}} 
                         {{/data2}}
                         \\
                     {{/data}}
@@ -132,7 +61,39 @@
                 </me>
             </p>
         </outtro>  
-    <!-- {{/evenodd}} -->
+    <!-- {{/coins}} -->
+
+    <!-- {{#dice}} -->
+        <content>
+            <p>
+                Rowan and Collen each put $<m>{{pool}}</m> into the pot.  They then each roll a four-sided dice in secret.
+                Rowan may either <em>Fold</em>, in which case Colleen takes the entire pot, or they may <em>Raise</em> by $<m>{{bet}}</m>, putting this value into the pot.  If Rowan raises, then either Colleen <em>Fold</em>s, in which case Rowan takes the pot, or <em>Calls</em>, also placing
+                $<m>{{bet}}</m> into the pot.  If Colleen calls, both player reveals their die, and the player with the higher number takes the pot. In the case of a tie they split the pot.
+
+            </p>
+            <p>
+                Write out the payoff matrix for this game.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+                    \begin{array}{ r| {{#C}} {{c}} {{/C}} | }
+                    {{#col}} &amp; {{col}} {{/col}} \\
+                    \hline
+                    {{#data}}
+                        {{row}}
+                        {{#data2}}
+                          &amp; \small {{entry}} 
+                        {{/data2}}
+                        \\
+                    {{/data}}
+                    \hline
+                    \end{array}
+                </me>
+            </p>
+        </outtro>  
+    <!-- {{/dice}} -->
 </knowl>
 
 

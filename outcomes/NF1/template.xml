@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Consider the following capacitated network with labeled capacities:  
+        </p>
+        <p><image
+                source="assets/NF1/generated/{{__seed__}}/plot.png"
+                description="Capacitated network with labeled capacities."/></p>
+        <p>
+            Find a feasible flow through this network which maximizes the flow into <m>v_d</m>.
+        </p>
+    </content>
+    <outtro>
+        <p>
+            The maximumum flow value is <m>{{optimalsolution}}</m>.  An example of such a flow is 
+            <m>x_{s,1} = {{xs1}}</m>,
+            <m>x_{s,2} = {{xs2}}</m>,
+            <m>x_{1,2} = {{x12}}</m>,
+            <m>x_{2,1} = {{x21}}</m>,
+            <m>x_{1,3} = {{x13}}</m>,
+            <m>x_{3,1} = {{x31}}</m>,
+            <m>x_{1,4} = {{x14}}</m>,
+            <m>x_{4,1} = {{x41}}</m>,
+            <m>x_{2,3} = {{x23}}</m>,
+            <m>x_{3,2} = {{x32}}</m>,
+            <m>x_{2,4} = {{x24}}</m>,
+            <m>x_{4,2} = {{x42}}</m>,
+            <m>x_{3,4} = {{x34}}</m>,
+            <m>x_{4,3} = {{x43}}</m>,
+            <m>x_{3,d} = {{x3d}}</m>,
+            <m>x_{4,d} = {{x4d}}</m>.
+        </p>
+    </outtro>
+</knowl>

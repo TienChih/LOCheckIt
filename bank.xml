@@ -196,5 +196,14 @@ Given an assignment problem, find the assignment that minimizes cost.
             </description>
         </outcome>
 
+        <outcome>
+            <title>Maximum Flow</title>
+            <slug>NF1</slug>
+            <path>outcomes/NF1</path>
+            <description>
+Find a maximum flow through a capacitated network.
+            </description>
+        </outcome>
+
     </outcomes>
 </bank>
