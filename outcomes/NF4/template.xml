@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Consider the following capacitated weighted network with labeled capacities and weights:  
+        </p>
+        <p><image
+                source="assets/NF4/generated/{{__seed__}}/plot.png"
+                description="Capacitated weighted network with labeled capacities and weights."/></p>
+        <p>
+            Consider the <m>(c,w)</m> pairs the cost and weight respectively. Find a feasible flow from <m>v_s</m> to <m>v_d</m> through this network of value <m>F = {{flow}}</m> which minimizes the weight of the flow.
+        </p>
+    </content>
+    <outtro>
+        <p>
+            The minimum weight is <m>{{optimalsolution}}</m>.  An example of such a flow is 
+            <m>z_{s,1} = {{zs1}}</m>,
+            <m>z_{s,2} = {{zs2}}</m>,
+            <m>z_{1,2} = {{z12}}</m>,
+            <m>z_{2,1} = {{z21}}</m>,
+            <m>z_{1,3} = {{z13}}</m>,
+            <m>z_{3,1} = {{z31}}</m>,
+            <m>z_{1,4} = {{z14}}</m>,
+            <m>z_{4,1} = {{z41}}</m>,
+            <m>z_{2,3} = {{z23}}</m>,
+            <m>z_{3,2} = {{z32}}</m>,
+            <m>z_{2,4} = {{z24}}</m>,
+            <m>z_{4,2} = {{z42}}</m>,
+            <m>z_{3,4} = {{z34}}</m>,
+            <m>z_{4,3} = {{z43}}</m>,
+            <m>z_{3,d} = {{z3d}}</m>,
+            <m>z_{4,d} = {{z4d}}</m>.
+        </p>
+    </outtro>
+</knowl>

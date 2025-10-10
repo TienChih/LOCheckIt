@@ -223,5 +223,14 @@ Apply Dijkstra's Shortest Path Algorithm.
             </description>
         </outcome>
 
+        <outcome>
+            <title>Minimum Cost Flow</title>
+            <slug>NF4</slug>
+            <path>outcomes/NF4</path>
+            <description>
+Apply the Minimum Cost Flow Algorithm.
+            </description>
+        </outcome>
+
     </outcomes>
 </bank>
