@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Consider the following capacitated network with labeled capacities:  
+        </p>
+        <p><image
+                source="assets/NF2/generated/{{__seed__}}/plot.png"
+                description="Capacitated network with labeled capacities."/></p>
+        <p>
+            Find a minimum cut for this network.
+        </p>
+    </content>
+    <outtro>
+        <p>
+            The minimum cut value is <m>{{optimalsolution}}</m>.  An example of such a cut is 
+            <m> V_1 = \{ v_s{{#CutV1}}, v_{ {{i}} } {{/CutV1}}    \}</m>, 
+            <m> V_2 = \{ {{#CutV2}}v_{ {{j}} },  {{/CutV2}} v_d    \}</m>.
+        </p>
+    </outtro>
+</knowl>

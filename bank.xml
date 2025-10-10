@@ -205,5 +205,23 @@ Find a maximum flow through a capacitated network.
             </description>
         </outcome>
 
+        <outcome>
+            <title>Minimum Cuts</title>
+            <slug>NF2</slug>
+            <path>outcomes/NF2</path>
+            <description>
+Find a minimum of a capacitated network.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Shortest Paths</title>
+            <slug>NF3</slug>
+            <path>outcomes/NF3</path>
+            <description>
+Apply Dijkstra's Shortest Path Algorithm.
+            </description>
+        </outcome>
+
     </outcomes>
 </bank>
