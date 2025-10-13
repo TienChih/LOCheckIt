@@ -42,42 +42,48 @@ class Generator(BaseGenerator):
         var('x_1 x_2 x_3 x_4')
         
         InitialA = [[0,0,0,0],[0,0,0,0]]
-        InitialB = [0,0,0]
-        InitialC = [0,0,0]
+        InitialB = [0,0]
+        InitialC = [0,0,0,0]
         InitialD = randrange(-20,3)
 
         
         dummy = 0
-        while dummy == 0:
-            InitialA[0][0] = randrange(1,6)
-            InitialA[1][1] = randrange(1,6)
+        while dummy < 1:
+            InitialA[0][0] = randrange(-5,6)
+            InitialA[1][1] = randrange(-5,6)
             InitialA[0][1] = randrange(1,6)
             InitialA[1][0] = randrange(1,6)
             M = matrix([[InitialA[0][0], InitialA[0][1]], [InitialA[1][0], InitialA[1][1]]])
-            dummy = M.determinant()
+            point3 = randrange(1,10)
+            point4 = randrange(1,10)
+            InitialB[0] = InitialA[0][0]*point3 + InitialA[0][1]*point4
+            InitialB[1] = InitialA[1][0]*point3 + InitialA[1][1]*point4
+            dummy = min([abs(M.determinant()), InitialB[0], InitialB[1]  ])
         dummy=0
 
-        InitialA[0][2] = randrange(1,6)
-        InitialA[0][3] = randrange(-5,0)
-
-        InitialA[1][3] = randrange(1,6)
-        InitialA[1][2] = randrange(-5,0)    
+        while dummy == 0:
+            InitialA[0][2] = randrange(-5,6)
+            InitialA[0][3] = randrange(-5,6)
+            InitialA[1][2] = randrange(-5,6)
+            InitialA[1][3] = randrange(-5,6)
+            M = matrix([[InitialA[0][0], InitialA[0][1]], [InitialA[1][0], InitialA[1][1]]])
+            dummy = M.determinant()
                  
         
         
+        Neg = [-1, choice([-1,1])]    
+        shuffle(Neg)
 
+        InitialC = [randrange(1,6)*Neg[0], randrange(1,6)*Neg[1], randrange(1,6), randrange(1,6),  ]
 
-        InitialC = [randrange(1,6), randrange(1,6), randrange(1,6)*choice([-1,1]), randrange(1,6)*choice([-1,1]) ]
-
-        InitialB = [randrange(10,21), randrange(10,21), ]
         shuffle(InitialC)
         
         
 
         ShuffleI = [0,1]
-        shuffle(ShuffleI)
+        #shuffle(ShuffleI)
         ShuffleJ = [0,1,2,3]
-        shuffle(ShuffleJ)   
+        #shuffle(ShuffleJ)   
 
         NOA = [0,0]
         NOA[0] = InitialA[0].copy()
@@ -112,7 +118,7 @@ class Generator(BaseGenerator):
         
 
         pivrow = ShuffleI[1]
-        pivcol = ShuffleJ[3]
+        pivcol = ShuffleJ[0]
         V = self.simplexpivot(FinalA,FinalB,FinalC,FinalD,pivrow,pivcol).copy()
         FinalA[0] = V[0][0].copy()
         FinalA[1] = V[0][1].copy()
@@ -130,7 +136,7 @@ class Generator(BaseGenerator):
 
 
         pivrow = ShuffleI[0]
-        pivcol = ShuffleJ[2]
+        pivcol = ShuffleJ[1]
         V = self.simplexpivot(FinalA,FinalB,FinalC,FinalD,pivrow,pivcol).copy()
         FinalA[0] = V[0][0].copy()
         FinalA[1] = V[0][1].copy()
@@ -177,17 +183,17 @@ class Generator(BaseGenerator):
 
         return {
             "emptyregion": False,
-            "Fa11": FinalA[0][min(ShuffleJ[0],ShuffleJ[1])],
-            "Fa12": FinalA[0][max(ShuffleJ[0],ShuffleJ[1])],
-            "Fa21": FinalA[1][min(ShuffleJ[0],ShuffleJ[1])],
-            "Fa22": FinalA[1][max(ShuffleJ[0],ShuffleJ[1])],
+            "Fa11": FinalA[0][min(ShuffleJ[2],ShuffleJ[3])],
+            "Fa12": FinalA[0][max(ShuffleJ[2],ShuffleJ[3])],
+            "Fa21": FinalA[1][min(ShuffleJ[2],ShuffleJ[3])],
+            "Fa22": FinalA[1][max(ShuffleJ[2],ShuffleJ[3])],
             "Fb1": FinalB[0],
             "Fb2": FinalB[1],
-            "Fc1": FinalC[min(ShuffleJ[0],ShuffleJ[1])],
-            "Fc2": FinalC[max(ShuffleJ[0],ShuffleJ[1])],
+            "Fc1": FinalC[min(ShuffleJ[2],ShuffleJ[3])],
+            "Fc2": FinalC[max(ShuffleJ[2],ShuffleJ[3])],
             "Fd": FinalD,
-            "x1": VarName[min(ShuffleJ[0],ShuffleJ[1])],
-            "x2": VarName[max(ShuffleJ[0],ShuffleJ[1])],
+            "x1": VarName[min(ShuffleJ[2],ShuffleJ[3])],
+            "x2": VarName[max(ShuffleJ[2],ShuffleJ[3])],
             "t1": VarName[ShuffleI[0]+4],
             "t2": VarName[ShuffleI[1]+4],            
             # Initial

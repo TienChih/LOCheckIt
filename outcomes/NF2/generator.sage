@@ -107,7 +107,7 @@ class Generator(BaseGenerator):
                             V1temp.append(3)
                             V2temp.remove(3)
                     if i == 3 and j == 1:
-                        if ((x[3,1] < c31) or (x[1,3]>0) ) and (1 in V2temp):
+                        if ((P.get_values(x[3,1]) < c31) or (P.get_values(x[1,3])>0) ) and (1 in V2temp):
                             V1temp.append(1)
                             V2temp.remove(1)
                     if i == 1 and j == 4:

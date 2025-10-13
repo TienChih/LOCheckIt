@@ -232,5 +232,26 @@ Apply the Minimum Cost Flow Algorithm.
             </description>
         </outcome>
 
+
+        <outcome>
+            <title>Branch and Bound</title>
+            <slug>IO1</slug>
+            <path>outcomes/IO1</path>
+            <description>
+Use the Branch and Bound Algorithm to solve an integer optimization problem.
+            </description>
+        </outcome>
+
+        <outcome>
+            <title>Cutting Plane</title>
+            <slug>IO2</slug>
+            <path>outcomes/IO2</path>
+            <description>
+Use the Gomory Cutting-Plane Algorithm Algorithm to solve an integer optimization problem.
+            </description>
+        </outcome>
+
+
+
     </outcomes>
 </bank>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+            Suppose we wish to maximize <m>f(x_1, x_2, x_3) = {{objectivefunction}}</m> subject to:
+            <me>
+                \begin{array}{rcl} 
+                    {{row1}} &amp; \leq &amp; {{b1}} \\
+                    {{row2}} &amp; \leq &amp; {{b2}} \\
+                    {{row3}} &amp; \leq &amp; {{b3}} \\
+                    x_1, x_2, x_3&amp; \geq  &amp; 0 \\
+                    x_1, x_2, x_3&amp; \in  &amp; \mathbb{Z} \\ 
+                \end{array}
+            </me>
+        </p>
+        <p>
+            Use the cutting-plane algorithm to solve this integer optimization problem.
+        </p>
+        
+    </content>
+    <outtro>
+        <p>
+            The optimal solution is found when <m>x_1 = {{x1value}}</m>, <m>x_2 = {{x2value}}</m>, and <m>x_3 = {{x3value}}</m>.
+            The optimal objective value is <m>f({{x1value}}, {{x2value}}, {{x3value}}) = {{optimalsolution}}</m>
+        </p>
+        
+    </outtro>
+</knowl>

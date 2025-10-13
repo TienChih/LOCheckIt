@@ -32,7 +32,7 @@
             </me>
         </p>
         <p>
-            The final tableau should be something like:
+            After pivoting and deleting columns, the tableau should be something like:
             <me>
                 \begin{array}{|cc|c|l}
                 {{x1}} &amp; {{x2}} &amp;  -1\\
