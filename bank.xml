@@ -2,7 +2,7 @@
 <bank xmlns="https://checkit.clontz.org" version="0.2">
     <title>Linear Optimization Bank</title>
     <slug>new-checkit-bank</slug>
-    <url>https://checkit.clontz.org</url>
+    <url>https://linopt.tienchih.org/</url>
     <outcomes>
         <outcome>
             <title>Geometric Optimization</title>
