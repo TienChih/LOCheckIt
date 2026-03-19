@@ -300,11 +300,11 @@ class Generator(BaseGenerator):
             
              
                      
-        if -1*FinalD == 0:
+        if FinalD == 0:
             conclusion = "is a fair game"
-        if -1*FinalD < 0:
+        if FinalD < 0:
             conclusion = "favors the column player"
-        if -1*FinalD > 0:
+        if FinalD > 0:
             conclusion = "favors the row player"                
 
            
@@ -388,6 +388,6 @@ class Generator(BaseGenerator):
             "c1strat": OrJ[0]+1,
             "c2strat": OrJ[1]+1,
             "c3strat": OrJ[2]+1,
-            "optimalsolution": -1*FinalD,
+            "optimalsolution": FinalD,
             "conclusion": conclusion,
         }
